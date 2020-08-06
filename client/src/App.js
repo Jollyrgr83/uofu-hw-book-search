@@ -1,18 +1,31 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // stylesheet
 import "./App.css";
 // components
 import Nav from "./components/Nav";
-import Jumbotron from "./components/Jumbotron";
-import Container from "./components/Container";
+import Search from "./pages/Search";
+import Saved from "./pages/Saved";
+import NoMatch from "./pages/NoMatch";
 
 function App() {
   return (
-    <div>
-      <Nav />
-      <Jumbotron />
-      <Container />
-    </div>
+    <Router>
+      <div>
+        <Nav />
+        <Switch>
+          <Route exact path={["/", "/search"]}>
+            <Search />
+          </Route>
+          <Route exact path={["/saved"]}>
+            <Saved />
+          </Route>
+          <Route>
+            <NoMatch />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

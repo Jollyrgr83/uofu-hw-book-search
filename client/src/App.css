@@ -106,3 +106,38 @@ h3 {
 .delete {
   background-color: red;
 }
+
+.search {
+  width: 275px;
+}
+
+.links {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+.book-links {
+  color: blue;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+.links:hover, .book-links:hover {
+  color: skyblue;
+  text-decoration: none;
+}
+
+input, input:active, input:focus {
+  outline: none;
+  border: none;
+  box-shadow: 3px 3px 6px black;
+  border-radius: 40px;
+  max-width: 90%;
+  width: 50em;
+  height: 3em;
+  margin: 10px;
+  text-align: center;
+}
