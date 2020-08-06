@@ -38,4 +38,4 @@ There are currently no tests for this app.
 
 ## **Video of Deployed Application**
 
-![Deployed Application](/public/assets/images/video.gif)
+[Deployed Application](https://books-companion.herokuapp.com/)
