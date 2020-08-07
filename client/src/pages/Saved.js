@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import API from "../util/API";
 
 import Jumbotron from "../components/Jumbotron";
-import SavedCard from "../components/SavedCard";
 
 function Saved() {
   const [books, setBooks] = useState();

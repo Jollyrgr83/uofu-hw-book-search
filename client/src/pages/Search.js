@@ -11,8 +11,6 @@ function Search() {
   
   function handleInputChange(e) {
     const { id, value } = e.target;
-    console.log("id", id);
-    console.log("value", value);
     setSearchTerms({[id]: value});
   };
 
@@ -20,7 +18,6 @@ function Search() {
     e.preventDefault();
     API.search(searchTerms.searchTerms)
     .then(res => {
-      console.log("res", res);
       let refinedArr = res.data.items.map(x => {
         return {
           title: x.volumeInfo.title,
@@ -32,7 +29,7 @@ function Search() {
         }
       })
       setSearchResults(refinedArr);
-      console.log(refinedArr)})
+      })
     .catch(err => console.log(err));
   };
 
@@ -46,7 +43,6 @@ function Search() {
       src: el.dataset.src,
       link: el.dataset.link
     };
-    console.log("bookObj", bookObj);
     API.saveBook(bookObj);
   };
 
