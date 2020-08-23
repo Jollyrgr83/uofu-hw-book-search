@@ -36,6 +36,6 @@ Send me a message on GitHub, otherwise, feel free to clone or download.
 
 There are currently no tests for this app.
 
-## **Video of Deployed Application**
+## **Deployed Application**
 
 [Deployed Application](https://books-companion.herokuapp.com/)
