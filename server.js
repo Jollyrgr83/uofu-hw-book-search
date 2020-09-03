@@ -18,7 +18,8 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes);
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://dbuser:password1@ds331558.mlab.com:31558/heroku_wlgbr2xz");
+// mongoose.connect(process.env.MONGODB_URI || "mongodb://dbuser:password1@ds331558.mlab.com:31558/heroku_wlgbr2xz");
+mongoose.connect("mongodb+srv://dbuser:password1@cluster-books.lkeya.mongodb.net/heroku_wlgbr2xz?retryWrites=true&w=majority");
 
 // Start the API server
 app.listen(PORT, function() {
